@@ -7,6 +7,7 @@
 
 .about {
     background-color: #e5fbef;
+    height: 50vh;
 }
 
 .about>p {
@@ -41,12 +42,35 @@ html {
     font-size: 1rem;
 }
 
+.footer-icon {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.footer-icon i {
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+}
+
+.footer-icon span {
+    margin-left: 0.2rem;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 2rem;
     font-size: 1.1rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 span {
@@ -65,4 +89,8 @@ ul>li {
 
 ul>li:hover {
     color: #2BBD75;
+}
+
+.center {
+    justify-content: center;
 }
