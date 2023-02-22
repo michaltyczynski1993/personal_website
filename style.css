@@ -6,6 +6,10 @@
 }
 
 .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #e5fbef;
     height: 55vh;
 }
@@ -38,8 +42,17 @@ button {
     margin: 0.2rem 0.2rem;
 }
 
+button a {
+    text-decoration: none;
+    color: #333;
+}
+
 button:hover {
     background-color: #2BBD75;
+    color: #fff;
+}
+
+button a:hover {
     color: #fff;
 }
 
@@ -54,7 +67,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 1rem auto;
     padding-top: 1rem;
     flex-wrap: wrap;
 }
@@ -65,7 +78,7 @@ html {
 
 footer {
     background-color: #06D861;
-    color: #e3e1e1;
+    color: #fff;
 }
 
 .footer-icon {
@@ -83,7 +96,7 @@ footer {
 
 .footer-icon a {
     text-decoration: none;
-    color: #e3e1e1;
+    color: #fff;
     font-size: 1.2rem;
 }
 
@@ -105,6 +118,10 @@ nav h1 {
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 0.8rem 0;
+}
+
+.row i {
+    padding: 0.7rem 0;
 }
 
 span {
@@ -129,13 +146,79 @@ ul>li:hover {
     justify-content: center;
 }
 
-.card-text p {
-    color: #6d6d6d;
+.card-icon {
+    padding: 0.7rem 0;
 }
 
+.card-text p {
+    color: #6d6d6d;
+    padding: 1rem 0;
+}
+
+.card-text h2 {
+    margin-bottom: 0.5rem;
+}
+
+.col {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
 
 @media(min-width: 400px) {
     h6 {
         font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    nav {
+        padding: 1.5rem 0.3rem;
+    }
+
+    nav h1 {
+        font-size: 1.7rem;
+    }
+
+    .about {
+        height: 55vh;
+    }
+
+}
+
+@media(min-width: 800px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    button {
+        padding: 1rem, 1rem;
+        margin: 1rem 1rem;
+    }
+
+    .skills {
+        display: flex;
+    }
+
+    .col {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .row i {
+        padding: 0.7rem 1rem;
+    }
+}
+
+@media(min-width: 1200px) {
+    .card-icon {
+        padding: 1.2rem 0;
+    }
+
+    .card-text p {
+        padding: 2rem 0;
     }
 }
